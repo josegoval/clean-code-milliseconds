@@ -1,44 +1,49 @@
-# Typescript NPM Package Template
+# Clean Code Times
 
-Create and publish TS/JS NPM packages seamlessly.
+[![codecov](https://img.shields.io/codecov/c/github/josegoval/clean-code-milliseconds?style=for-the-badge)](https://codecov.io/gh/josegoval/clean-code-milliseconds)
+![npm bundle size](https://img.shields.io/bundlephobia/min/clean-code-milliseconds?style=for-the-badge)
+[![https://nodei.co/npm/clean-code-milliseconds.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/clean-code-milliseconds.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/clean-code-milliseconds)
 
-**Interested in supporting this free template?**
+`clean-code-milliseconds` is a JS and TS library that help you write clean code milliseconds.
+
+**Feel like supporting this free plugin?**
 
 <a href="https://www.buymeacoffee.com/josegoval" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
-## Steps
+**Table of Contents**
 
-1. Clone, download or fork this project.
-2. Replace in the [package.json](package.json) the next values with your own ones:
-    - name
-    - description
-    - keywords
-    - repository
-    - author
-3. Add `Read and write permissions` and `Allow GitHub Actions to create and approve pull requests` in `https://github.com/<username>/<project-name>/settings/actions`
-4. Create a NPM secret and add it to the project secrets:
-    - Generate Token in `https://www.npmjs.com/settings/<your-profile>/tokens`
-    - Create a `New repository secret` named `NPM_TOKEN` and copy its value (`https://github.com/<username>/<project-name>/settings/secrets/actions`)
-5. (Optional) Add codecov flow:
-    - Go to [codecov](https://about.codecov.io/), login, find your project and add the given `CODECOV_TOKEN` to your project secrets (`https://github.com/<username>/<project-name>/settings/secrets/actions`).
+- [Installation](#installation)
+- [Example usage](#example-usage)
 
-## How to skip the `npm publish` step
+## Installation
 
-As you can check in [.releaserc](.releaserc) and [release.yml workflow](.github/workflows/release.yml), and read in depth in the [semantic-release documentation](https://semantic-release.gitbook.io/semantic-release/usage/configuration), the project is configured to trigger a new versioned commit and publish to NPM under `master`, `next`, `next-major`, `beta` and `alpha`.
-
-To skip a CI include `[skip ci]` in the commit title or cancel the Github action.
-
-## How to trigger new versions
-
-This follows the conventional commits, so to trigger:
-- patch: Add a `fix` commit to a relevant branch .
-- minor: Add a `feat` commit to a relevant branch .
-- major: Add a `BREAKING CHANGE: description` footer commit to a relevant branch like:
-
-```
-feat: New core processing
-
-BREAKING CHANGE: core functions are broken and not backward compatible.
+```bash
+npm install --save clean-code-milliseconds
 ```
 
-**IMPORTANT**: Commits with `!` will not trigger a new version nor will be recorded in the changelog (example: `feat!: breaking stuffs`).
+or
+
+```bash
+yarn add clean-code-milliseconds
+```
+
+## Example usage
+
+Import and use as follow with ES6 syntax:
+
+```ts
+import { getDaysInMS, FIVE_DAYS_IN_MS } from "clean-code-milliseconds";
+
+console.log(getDaysInMs(5)) 
+console.log(FIVE_DAYS_IN_MS) 
+```
+
+For node environments without ES6 use `require` as follows:
+
+```ts
+
+const { getDaysInMS, FIVE_DAYS_IN_MS } = require("clean-code-milliseconds")
+
+console.log(getDaysInMs(5)) 
+console.log(FIVE_DAYS_IN_MS) 
+```

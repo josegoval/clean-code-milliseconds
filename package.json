@@ -1,18 +1,21 @@
 {
-  "name": "project-name",
+  "name": "clean-code-milliseconds",
   "version": "0.0.1",
-  "description": "Project description",
+  "description": "Readable millisecond constants and converters",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "readme": "README.md",
   "keywords": [
-    "your keywords",
-    "more keywords"
+    "clean code milliseconds",
+    "millisecond utils",
+    "millisecond constants",
+    "millisecond utilities",
+    "readable milliseconds"
   ],
   "files": [
     "/dist/**/*"
   ],
-  "repository": "https://github.com/usename/project-name.git",
+  "repository": "https://github.com/josegoval/clean-code-milliseconds.git",
   "author": "josegoval <josegovalmusic@gmail.com>",
   "license": "MIT",
   "scripts": {
