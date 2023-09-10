@@ -10,7 +10,7 @@
 
 <a href="https://www.buymeacoffee.com/josegoval" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
-Bored of complex math to figure out which a person want to express in milliseconds? Make it easy with pre-built constants and converters.
+Are you bored of complex mathematics to figure out what a person wants to express in milliseconds? Make it easy with pre-built constants and converters.
 
 **Table of Contents**
 
@@ -59,7 +59,7 @@ console.log(FIVE_DAYS_IN_MS)
 - `getHoursInMs`
 - `getDaysInMs`
 - `getWeeksInMs`
-- `getYearsInMs`: By default count 365 days, however, if you want to add a leap year add `{ isLeapYear: true }` to the second argument.
+- `getYearsInMs`: By default it counts 365 days, however, if you want to add a leap year add `{ isLeapYear: true }` to the second argument.
 
 ## Constants
 
